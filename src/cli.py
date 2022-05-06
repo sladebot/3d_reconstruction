@@ -24,5 +24,12 @@ context_settings = {
     required=True,
     help="Directory to store OBJ files.",
 )
-def cli(input, output):
+def cli(input, output, generate_unity_data=True):
     ctx = click.get_current_context()
+    # Convert to frames
+
+    # Predict & Save series of obj
+    # if generate_unity_data:
+        # Convert to dae for Unity consumption
+
+
