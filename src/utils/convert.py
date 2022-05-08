@@ -11,7 +11,7 @@ from src.modules.lhpe import infer_fast
 def mp4_to_frames(video, output_dir, target_fps=24):
     vidcap = cv2.VideoCapture(video)
     fps = vidcap.get(cv2.CAP_PROP_FPS)
-    # print(f"fps: {fps}, Target FPS: {target_fps}, Divider: {fps // target_fps}")
+    print(f"fps: {fps}, Target FPS: {target_fps}, Divider: {fps // target_fps}")
     success, image = vidcap.read()
     count = 0
     while success:
@@ -20,7 +20,7 @@ def mp4_to_frames(video, output_dir, target_fps=24):
             cv2.imwrite(f"{output_dir}/frame%d.png" % count, image)  # save frame as JPEG file
         success, image = vidcap.read()
         count += 1
-    print("Finished preprocessing video")
+    print("Converted video to frames")
 
 
 def generate_rect(net, images, height_size):

@@ -55,7 +55,7 @@ def reconstruction(net, cuda, calib_tensor,
 
     # Finally we do marching cubes
     try:
-        verts, faces, normals, values = measure.marching_cubes_lewiner(sdf, thresh)
+        verts, faces, normals, values = measure.marching_cubes(sdf, thresh)
         # transform verts into world coordinate system
         trans_mat = np.matmul(calib_inv, mat)
         verts = np.matmul(trans_mat[:3, :3], verts.T) + trans_mat[:3, 3:4]
@@ -79,18 +79,6 @@ def save_obj_mesh(mesh_path, verts, faces=None):
                 continue
             f_plus = f + 1
             file.write('f %d %d %d\n' % (f_plus[0], f_plus[2], f_plus[1]))
-        print("Wrote all faces")
-    file.close()
-
-def save_obj_mesh_with_color(mesh_path, verts, faces, colors):
-    file = open(mesh_path, 'w')
-
-    for idx, v in enumerate(verts):
-        c = colors[idx]
-        file.write('v %.4f %.4f %.4f %.4f %.4f %.4f\n' % (v[0], v[1], v[2], c[0], c[1], c[2]))
-    for f in faces:
-        f_plus = f + 1
-        file.write('f %d %d %d\n' % (f_plus[0], f_plus[2], f_plus[1]))
     file.close()
 
 def batch_eval(points, eval_func, num_samples=512 * 512 * 512):
@@ -185,6 +173,7 @@ def eval_grid_octree(coords, eval_func,
 
 
 def meshcleaning(file_dir):
+    print(f"Starting to clean...{file_dir}")
     files = sorted([f for f in os.listdir(file_dir) if '.obj' in f])
     for i, file in enumerate(files):
         obj_path = os.path.join(file_dir, file)
@@ -203,7 +192,9 @@ def meshcleaning(file_dir):
                 height = bbox[1,0] - bbox[0,0]
                 out_mesh = c
         
-        out_mesh.export(obj_path)
+        refined_filename = f"{obj_path.split('.')[0]}_refined.obj"
+        print(f"Writing to {refined_filename}")
+        out_mesh.export(refined_filename)
 
         
 

@@ -4,6 +4,7 @@ import click
 
 from src.utils import preprocess
 from src.eval import generate
+from src.utils.mesh_utils import meshcleaning
 
 logger = logging.getLogger(__name__)
 
@@ -29,33 +30,48 @@ context_settings = {
     help="Directory to store OBJ files.",
 )
 @click.option(
+    "-r",
+    "--resolution",
+    default=256,
+    help="Resolution",
+)
+@click.option(
+    "-f",
     "--fps",
-    required=False,
     default=24,
     help="Sampling FPS from video (This is not the input video fps)",
 )
-def cli(input_video, output_dir, fps, generate_unity_data=True):
+@click.option(
+    "-g",
+    "--gpu_id",
+    default=0,
+    help="Sampling FPS from video (This is not the input video fps)",
+)
+@click.option(
+    "-c",
+    "--meshclean/--no-meshclean",
+    default=False,
+)
+def cli(input_video, output_dir, resolution, fps, gpu_id, meshclean, generate_unity_data=True):
     ctx = click.get_current_context()
-    
     # Convert to frames
     data_dir = preprocess(input_video, fps=fps)
     # data_dir = "__temp_vid_frames_input"
 
     # Predict & Save series of obj
-    print(data_dir)
-   
-    start_id, end_id = -1, -1
-    generate(
+    results_dir, ok = generate(
         ckpt_path="checkpoints/pifuhd.pt",
         dataroot=data_dir,
-        resolution=512,
+        resolution=resolution,
         results_path=output_dir,
         load_size=1024,
         use_rect=True,
-        start_id=start_id,
-        end_id=end_id,
-        gpu_id=0
-        )
+        gpu_id=gpu_id)
+
+    # results_dir, ok = '%s/%s/recon' % (output_dir, 'pifuhd_final'), True
+    
+    if ok and meshclean:
+        meshcleaning(results_dir)
     
     # if generate_unity_data:
         # Convert to dae for Unity consumption
