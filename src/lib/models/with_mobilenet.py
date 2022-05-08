@@ -1,6 +1,8 @@
 import torch
 from torch import nn
+
 from src.modules.conv import conv, conv_dw, conv_dw_no_bn
+
 
 class PoseEstimationWithMobileNet(nn.Module):
     def __init__(self, num_refinement_stages=1, num_channels=128, num_heatmaps=19, num_pafs=38):

@@ -2,9 +2,10 @@
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F 
+import torch.nn.functional as F
 
 from ..geometry import index, orthogonal, perspective
+
 
 class BasePIFuNet(nn.Module):
     def __init__(self,

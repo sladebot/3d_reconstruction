@@ -1,14 +1,14 @@
-import os
-import trimesh
 import glob
+import os
 
-from skimage import measure
 import numpy as np
 import torch
-from .sdf import create_grid, eval_grid_octree, eval_grid
+import trimesh
+from numpy.linalg import inv
 from skimage import measure
 
-from numpy.linalg import inv
+from src.lib.sdf import create_grid, eval_grid, eval_grid_octree
+
 
 def reconstruction(net, cuda, calib_tensor,
                    resolution, b_min, b_max, thresh=0.5,
@@ -89,6 +89,8 @@ def eval_grid(coords, eval_func, num_samples=512 * 512 * 512):
 
 
 import time
+
+
 def eval_grid_octree(coords, eval_func,
                      init_resolution=64, threshold=0.05,
                      num_samples=512 * 512 * 512):

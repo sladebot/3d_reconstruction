@@ -1,6 +1,6 @@
 import logging
-import click
 
+import click
 
 from src.utils import mp4_to_frames
 

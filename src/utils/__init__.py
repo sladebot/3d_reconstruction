@@ -1,10 +1,11 @@
-from pathlib import Path
 import os
 import shutil
+from pathlib import Path
 
 from src.models.with_mobilenet import PoseEstimationWithMobileNet
 
-from .convert import mp4_to_frames, generate_rect
+from .convert import generate_rect, mp4_to_frames
+
 
 def _load_mobile_net(ckpt="checkpoints/checkpoint_iter_370000.pth"):
     net = PoseEstimationWithMobileNet()

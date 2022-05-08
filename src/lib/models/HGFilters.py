@@ -22,9 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 import torch
-import torch.nn as nn 
-import torch.nn.functional as F 
+import torch.nn as nn
+import torch.nn.functional as F
+
 from ..net_util import conv3x3
+
 
 class ConvBlock(nn.Module):
     def __init__(self, in_planes, out_planes, norm='batch'):

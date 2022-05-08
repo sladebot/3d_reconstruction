@@ -1,15 +1,17 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.
 
+import cv2
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F 
+import torch.nn.functional as F
+
+from ..net_util import init_net
 from .BasePIFuNet import BasePIFuNet
-from .MLP import MLP
 from .DepthNormalizer import DepthNormalizer
 from .HGFilters import HGFilter
-from ..net_util import init_net
-import cv2
+from .MLP import MLP
+
 
 class HGPIFuMRNet(BasePIFuNet):
     '''

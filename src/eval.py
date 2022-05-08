@@ -1,8 +1,14 @@
-import sys
 import os
+import sys
 
-from src.lib import EvalWPoseDataset, EvalDataset
-from src.lib.model import HGPIFuNetwNML, HGPIFuMRNet
+import cv2
+import numpy as np
+import torch
+from tqdm import tqdm
+
+from src.lib.data import EvalDataset, EvalPoseDataset
+from src.lib.models import HGPIFuMRNet, HGPIFuNetwNML
+from src.utils.mesh_utils import reconstruction, save_obj_mesh
 
 def generate(
         ckpt_path,
@@ -20,7 +26,6 @@ def generate(
 
     state_dict = None
 
-
     if os.path.exists(ckpt_path):
         state_dict = torch.load(ckpt_path, map_location=cuda)
         opt = state_dict['opt']
@@ -34,11 +39,11 @@ def generate(
     if use_rect:
         test_dataset = EvalDataset(opt)
     else:
-        test_dataset = EvalWPoseDataset(opt)
+        test_dataset = EvalPoseDataset(opt)
     
     projection_mode = test_dataset.projection_mode
     opt_netG = state_dict["opt_negG"]
-    netG = HGPIFuNetwNML(opt_negG, projection_mode).to(device=cuda)
+    netG = HGPIFuNetwNML(opt_netG, projection_mode).to(device=cuda)
     netMR = HGPIFuMRNet(opt, netG, projection_mode).to(device=cuda)
 
     netMR.load_state_dict(state_dict['model_state_dict'])
@@ -64,8 +69,7 @@ def generate(
             gen_mesh(resolution, netMR, cuda, test_data, save_path, components=opt.use_compose)
 
 
-
-def gen_mesh(res, net, cuda, data, save_path, threshold=0.5, use_octree=True):
+def gen_mesh(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, components=False):
     image_tensor_global = data['img_512'].to(device=cuda)
     image_tensor = data['img'].to(device=cuda)
     calib_tensor = data['calib'].to(device=cuda)
@@ -111,6 +115,6 @@ def gen_mesh(res, net, cuda, data, save_path, threshold=0.5, use_octree=True):
             nml = net.nmls.detach().cpu().numpy()[0] * 0.5 + 0.5
             color[left:right] = nml.T
 
-            save_obj_mesh_with_color(save_path, verts, faces, color)
+            save_obj_mesh(save_path, verts, faces, color)
     except Exception as e:
         print(e)
