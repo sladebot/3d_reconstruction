@@ -1,7 +1,7 @@
-import glob
 import os
 
 import numpy as np
+import open3d as o3d
 import torch
 import trimesh
 from numpy.linalg import inv
@@ -68,6 +68,7 @@ def reconstruction(net, cuda, calib_tensor,
         print('error cannot marching cubes')
         return -1
 
+
 def save_obj_mesh(mesh_path, verts, faces=None):
     file = open(mesh_path, 'w')
 
@@ -80,6 +81,7 @@ def save_obj_mesh(mesh_path, verts, faces=None):
             f_plus = f + 1
             file.write('f %d %d %d\n' % (f_plus[0], f_plus[2], f_plus[1]))
     file.close()
+
 
 def batch_eval(points, eval_func, num_samples=512 * 512 * 512):
     num_pts = points.shape[1]
@@ -94,14 +96,12 @@ def batch_eval(points, eval_func, num_samples=512 * 512 * 512):
 
     return sdf
 
+
 def eval_grid(coords, eval_func, num_samples=512 * 512 * 512):
     resolution = coords.shape[1:4]
     coords = coords.reshape([3, -1])
     sdf = batch_eval(coords, eval_func, num_samples=num_samples)
     return sdf.reshape(resolution)
-
-
-import time
 
 
 def eval_grid_octree(coords, eval_func,
@@ -172,17 +172,37 @@ def eval_grid_octree(coords, eval_func,
     return sdf.reshape(resolution)
 
 
+def simplify_mesh(obj_path):
+    mesh = o3d.io.read_triangle_mesh(obj_path)
+    mesh.compute_vertex_normals()
+    print(
+        f'Input mesh has {len(mesh.vertices)} vertices and {len(mesh.triangles)} triangles'
+    )
+    voxel_size = max(mesh.get_max_bound() - mesh.get_min_bound()) / 512 # TODO: Tune this.
+    print(f'voxel_size = {voxel_size:e}')
+    mesh_smp = mesh.simplify_vertex_clustering(
+        voxel_size=voxel_size,
+        contraction=o3d.geometry.SimplificationContraction.Average)
+    print(
+        f'Simplified mesh has {len(mesh_smp.vertices)} vertices and {len(mesh_smp.triangles)} triangles'
+    )
+    filename = f"{obj_path.split('.')[0]}_smpl.obj"
+    print(f"Writing to - {filename}")
+    o3d.io.write_triangle_mesh(filename, mesh_smp, write_vertex_colors=True, print_progress=True)
+    return filename
+
+
 def meshcleaning(file_dir):
     print(f"Starting to clean...{file_dir}")
     files = sorted([f for f in os.listdir(file_dir) if '.obj' in f])
     for i, file in enumerate(files):
         obj_path = os.path.join(file_dir, file)
-
-        print(f"Processing: {obj_path}")
-
+        # Updating to new path
+        obj_path = simplify_mesh(obj_path)
         mesh = trimesh.load(obj_path)
-        cc = mesh.split(only_watertight=False)    
+        # print(mesh.is_watertight)
 
+        cc = mesh.split(only_watertight=False)
         out_mesh = cc[0]
         bbox = out_mesh.bounds
         height = bbox[1,0] - bbox[0,0]
@@ -191,7 +211,7 @@ def meshcleaning(file_dir):
             if height < bbox[1,0] - bbox[0,0]:
                 height = bbox[1,0] - bbox[0,0]
                 out_mesh = c
-        
+
         refined_filename = f"{obj_path.split('.')[0]}_refined.obj"
         print(f"Writing to {refined_filename}")
         out_mesh.export(refined_filename)
