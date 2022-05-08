@@ -23,14 +23,14 @@ def load_state(net, checkpoint):
     net.load_state_dict(new_target_state)
 
 
-def _load_mobile_net(ckpt="checkpoints/checkpoint_iter_370000.pth"):
+def _load_mobile_net(ckpt):
     net = PoseEstimationWithMobileNet()
     checkpoint = torch.load(ckpt, map_location='cpu')
     load_state(net, checkpoint)
     return net
 
 
-def preprocess(input_video, mobilenet_ckpt):
+def preprocess(input_video, fps=24, mobilenet_ckpt="checkpoints/checkpoint_iter_370000.pth"):
     
     if Path(input_video).suffix != '.mp4':
         raise Exception("Please provide a valid mp4 file")
@@ -46,12 +46,14 @@ def preprocess(input_video, mobilenet_ckpt):
     net = _load_mobile_net(mobilenet_ckpt)
 
     for filename in os.listdir(vid2frames_dir):
+        print(f"processing - {filename}")
         generate_rect(net.cuda(), [f"{vid2frames_dir}/{filename}"], 512)
 
-    return __temp_vid_frames_input
+    return vid2frames_dir
 
     
 __all__ = [
     'mp4_to_frames',
-    'generate_rect'
+    'generate_rect',
+    'preprocess'
 ]

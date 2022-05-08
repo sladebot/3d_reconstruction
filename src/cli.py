@@ -37,7 +37,7 @@ def cli(input_video, output_dir, fps, generate_unity_data=True):
     ctx = click.get_current_context()
     
     # Convert to frames
-    data_dir = preprocess(input_video)
+    data_dir = preprocess(input_video, fps=fps)
 
     # Predict & Save series of obj
     print(data_dir)
