@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 from src.lib.data import EvalDataset, EvalPoseDataset
 from src.lib.models import HGPIFuMRNet, HGPIFuNetwNML
-from src.utils.mesh_utils import reconstruction, save_obj_mesh
+from src.utils.mesh_utils import reconstruction, save_obj_mesh, save_obj_mesh_with_color
 
 
 def generate(
@@ -17,13 +17,15 @@ def generate(
         resolution,
         results_path,
         load_size,
-        use_rect=False,
-        opt=None):
+        start_id,
+        end_id,
+        gpu_id,
+        use_rect=False):
     
-    start_id = opt.start_id
-    end_id = opt.end_id
+    start_id = start_id
+    end_id = end_id
 
-    cuda = torch.device('cuda:%d' % opt.gpu_id if torch.cuda.is_available() else 'cpu')
+    cuda = torch.device('cuda:%d' % gpu_id if torch.cuda.is_available() else 'cpu')
 
     state_dict = None
 
@@ -43,20 +45,25 @@ def generate(
         test_dataset = EvalPoseDataset(opt)
     
     projection_mode = test_dataset.projection_mode
-    opt_netG = state_dict["opt_negG"]
+    print(state_dict.keys())
+    opt_netG = state_dict["opt_netG"]
     netG = HGPIFuNetwNML(opt_netG, projection_mode).to(device=cuda)
     netMR = HGPIFuMRNet(opt, netG, projection_mode).to(device=cuda)
+
+    def set_eval():
+        netG.eval()
 
     netMR.load_state_dict(state_dict['model_state_dict'])
 
     # TODO: Check
-    os.makedirs(ckpt_path, exist_ok=True)
+    # os.makedirs(ckpt_path, exist_ok=True)
     os.makedirs(results_path, exist_ok=True)
     os.makedirs('%s/%s/recon' % (results_path, opt.name), exist_ok=True)
 
     
     with torch.no_grad():
-        for i in tqdm(range(start_id, end_id)):
+        set_eval()
+        for i in tqdm(range(len(test_dataset))):
             if i >= len(test_dataset):
                 break
 
@@ -66,7 +73,7 @@ def generate(
             save_path = '%s/%s/recon/result_%s_%d.obj' % (opt.results_path, opt.name, test_data['name'], opt.resolution)
 
             print(f"Saving to {save_path}")
-
+            print(f"Model Mode:{netG.training}")
             gen_mesh(resolution, netMR, cuda, test_data, save_path, components=opt.use_compose)
 
 
@@ -99,6 +106,24 @@ def gen_mesh(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, compo
 
         verts, faces, _, _ = reconstruction(
             net, cuda, calib_tensor, res, b_min, b_max, thresh, use_octree=use_octree, num_samples=50000)
-        save_obj_mesh(save_path, verts, faces)
+        print(f"Predicted vertex shape {np.shape(verts)}")
+        verts_tensor = torch.from_numpy(verts.T).unsqueeze(0).to(device=cuda).float()
+        # if 'calib_world' in data:
+        #     calib_world = data['calib_world'].numpy()[0]
+        #     verts = np.matmul(np.concatenate([verts, np.ones_like(verts[:,:1])],1), inv(calib_world).T)[:,:3]
+
+        color = np.zeros(verts.shape)
+        interval = 50000
+        for i in range(len(color) // interval + 1):
+            left = i * interval
+            if i == len(color) // interval:
+                right = -1
+            else:
+                right = (i + 1) * interval
+            net.calc_normal(verts_tensor[:, None, :, left:right], calib_tensor[:,None], calib_tensor)
+            nml = net.nmls.detach().cpu().numpy()[0] * 0.5 + 0.5
+            color[left:right] = nml.T
+
+        save_obj_mesh_with_color(save_path, verts, faces, color)
     except Exception as e:
         print(e)

@@ -55,5 +55,5 @@ def preprocess(input_video, fps=24, mobilenet_ckpt="checkpoints/checkpoint_iter_
 __all__ = [
     'mp4_to_frames',
     'generate_rect',
-    'preprocess'
+    'preprocess',
 ]
