@@ -10,6 +10,7 @@ from src.lib.data import EvalDataset, EvalPoseDataset
 from src.lib.models import HGPIFuMRNet, HGPIFuNetwNML
 from src.utils.mesh_utils import reconstruction, save_obj_mesh
 
+
 def generate(
         ckpt_path,
         dataroot,
@@ -98,23 +99,6 @@ def gen_mesh(res, net, cuda, data, save_path, thresh=0.5, use_octree=True, compo
 
         verts, faces, _, _ = reconstruction(
             net, cuda, calib_tensor, res, b_min, b_max, thresh, use_octree=use_octree, num_samples=50000)
-        verts_tensor = torch.from_numpy(verts.T).unsqueeze(0).to(device=cuda).float()
-        # if 'calib_world' in data:
-        #     calib_world = data['calib_world'].numpy()[0]
-        #     verts = np.matmul(np.concatenate([verts, np.ones_like(verts[:,:1])],1), inv(calib_world).T)[:,:3]
-
-        color = np.zeros(verts.shape)
-        interval = 50000
-        for i in range(len(color) // interval + 1):
-            left = i * interval
-            if i == len(color) // interval:
-                right = -1
-            else:
-                right = (i + 1) * interval
-            net.calc_normal(verts_tensor[:, None, :, left:right], calib_tensor[:,None], calib_tensor)
-            nml = net.nmls.detach().cpu().numpy()[0] * 0.5 + 0.5
-            color[left:right] = nml.T
-
-            save_obj_mesh(save_path, verts, faces, color)
+        save_obj_mesh(save_path, verts, faces)
     except Exception as e:
         print(e)

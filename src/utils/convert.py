@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import torch
 
-from src.models.with_mobilenet import PoseEstimationWithMobileNet
+from src.lib.models.with_mobilenet import PoseEstimationWithMobileNet
 
 
 def mp4_to_frames(video, output_dir, target_fps=24):
