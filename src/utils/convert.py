@@ -3,8 +3,10 @@ import numpy as np
 import torch
 
 from src.lib.models.with_mobilenet import PoseEstimationWithMobileNet
-from src.lib.modules.keypoints import extract_keypoints, group_keypoints
-from src.lib.modules.pose import Pose, track_poses
+from src.modules.keypoints import extract_keypoints, group_keypoints
+from src.modules.pose import Pose, track_poses
+from src.modules.lhpe import infer_fast
+
 
 def mp4_to_frames(video, output_dir, target_fps=24):
     vidcap = cv2.VideoCapture(video)
@@ -34,8 +36,7 @@ def generate_rect(net, images, height_size):
         rect_path = image.replace('.%s' % (image.split('.')[-1]), '_rect.txt')
         img = cv2.imread(image, cv2.IMREAD_COLOR)
         orig_img = img.copy()
-        orig_img = img.copy()
-        heatmaps, pafs, scale, pad = demo.infer_fast(net, img, height_size, stride, upsample_ratio, cpu=False)
+        heatmaps, pafs, scale, pad = infer_fast(net, img, height_size, stride, upsample_ratio, cpu=False)
 
         total_keypoints_num = 0
         all_keypoints_by_type = []

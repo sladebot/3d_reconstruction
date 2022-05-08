@@ -2,7 +2,7 @@ import logging
 
 import click
 
-from src.utils import mp4_to_frames
+from src.utils import preprocess
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +40,7 @@ def cli(input_video, output_dir, fps, generate_unity_data=True):
     data_dir = preprocess(input_video)
 
     # Predict & Save series of obj
-    
+    print(data_dir)
     
     # if generate_unity_data:
         # Convert to dae for Unity consumption

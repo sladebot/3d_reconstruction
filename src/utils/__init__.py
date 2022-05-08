@@ -4,7 +4,7 @@ import torch
 from pathlib import Path
 import collections
 
-from src.models.with_mobilenet import PoseEstimationWithMobileNet
+from src.lib.models.with_mobilenet import PoseEstimationWithMobileNet
 
 from .convert import generate_rect, mp4_to_frames
 
