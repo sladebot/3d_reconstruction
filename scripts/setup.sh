@@ -18,9 +18,13 @@ source activate metacast
 conda install pytorch=1.9.0  torchvision cudatoolkit=10.2 -c pytorch
 pip install -r requirements.txt
 
-## Downloading light-human-pose
-#git clone https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch.git lhpe
-#cd lhpe
+## Downloading  checkpoints
 mkdir -p checkpoints && cd checkpoints
+
+# PifuHD
+curl "https://dl.fbaipublicfiles.com/pifuhd/checkpoints/pifuhd.pt" -o pifuhd.pt
+
+# Light Human Pose estimation
+# Check - https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch.git
 curl https://download.01.org/opencv/openvino_training_extensions/models/human_pose_estimation/checkpoint_iter_370000.pth -o checkpoint_iter_370000.pth
 cd ..
