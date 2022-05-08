@@ -1,6 +1,9 @@
 import logging
 import click
 
+
+from src.utils import mp4_to_frames
+
 logger = logging.getLogger(__name__)
 
 context_settings = {
@@ -13,23 +16,37 @@ context_settings = {
 @click.command(context_settings=context_settings)
 @click.option(
     "-i",
-    "--input",
+    "--input_video",
     required=True,
     help="Input MP4 file",
 )
 @click.option(
     "-o",
-    "--output",
+    "--output_dir",
     type=click.Path(file_okay=False, writable=True),
     required=True,
     help="Directory to store OBJ files.",
 )
-def cli(input, output, generate_unity_data=True):
+@click.option(
+    "--fps",
+    required=False,
+    default=24,
+    help="Sampling FPS from video (This is not the input video fps)",
+)
+def cli(input_video, output_dir, fps, generate_unity_data=True):
     ctx = click.get_current_context()
+    
     # Convert to frames
+    data_dir = preprocess(input_video)
 
     # Predict & Save series of obj
+    
+    
     # if generate_unity_data:
         # Convert to dae for Unity consumption
+
+
+if __name__ == "__main__":
+    cli()
 
 
