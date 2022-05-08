@@ -1,10 +1,26 @@
 import os
 import shutil
+import torch
 from pathlib import Path
+import collections
 
 from src.models.with_mobilenet import PoseEstimationWithMobileNet
 
 from .convert import generate_rect, mp4_to_frames
+
+
+def load_state(net, checkpoint):
+    source_state = checkpoint['state_dict']
+    target_state = net.state_dict()
+    new_target_state = collections.OrderedDict()
+    for target_key, target_value in target_state.items():
+        if target_key in source_state and source_state[target_key].size() == target_state[target_key].size():
+            new_target_state[target_key] = source_state[target_key]
+        else:
+            new_target_state[target_key] = target_state[target_key]
+            print('[WARNING] Not found pre-trained parameters for {}'.format(target_key))
+
+    net.load_state_dict(new_target_state)
 
 
 def _load_mobile_net(ckpt="checkpoints/checkpoint_iter_370000.pth"):
@@ -12,7 +28,6 @@ def _load_mobile_net(ckpt="checkpoints/checkpoint_iter_370000.pth"):
     checkpoint = torch.load(ckpt, map_location='cpu')
     load_state(net, checkpoint)
     return net
-
 
 
 def preprocess(input_video, mobilenet_ckpt):
