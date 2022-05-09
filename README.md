@@ -72,22 +72,63 @@ Here's an example:
 
 ![Refine](images/refine.png)
 
-### Results:
+
+#### Results:
+
+Some of the results i.e. final obj and dae files are provided in the 
+[results_mini/](results_mini) directory.
+
+```shell
+└── pifuHD
+    ├── FigureSkater
+    │  ├── dae
+    │  ├── result_frame2_256.obj
+    │  ├── result_frame2_256.png
+    │  ├── result_frame2_256_smpl.obj
+    │  └── result_frame2_256_smpl_refined.obj
+    ├── JumpingJacks
+    │  ├── dae
+    │  │   ├── result_frame0_256_smpl_refined.obj.dae
+    │  │  ├── result_frame2_256_smpl_refined.obj.dae
+    │  │  └── result_frame4_256_smpl_refined.obj.dae
+    │  ├── result_frame4_256.png
+    │  ├── result_frame4_256_smpl.obj
+    │  └── result_frame4_256_smpl_refined.obj
+    └── SkateBoarder
+        ├── dae
+        ├── result_frame2_256.obj
+        ├── result_frame2_256.png
+        ├── result_frame2_256_smpl.obj
+        └── result_frame2_256_smpl_refined.obj
+
+```
+
+### Unity Playthrough
+
+I mostly evaluated models generated from PifuHD. I also created a custom shader
+for using the vertex colors that Pifu for reading the RGB values encoded
+in the vertices and update the material. 
+
+
+For animating each video I imported all the 3D objects from the frames at the given
+frame rate, and enable them one at a time using a script in Unity. So what it
+does is basically - 
+
+1. Use `meshlab` or `meshlabserver` to convert from obj to dae (Makes ure to add the 
+   option vn for normals and vc for colors)
+2. Run it for each obj file
+3. There's a script if you want to do it in one shot. [scripts/obj2dae.sh](scripts/obj2dae.sh)
+
+e.g. - `./scripts/obj2dae.sh <dir-to-obj-files>`
+
+The entire project is checked into PlasticSCM at: [reconstruction@souranil_unity894@cloud] as well
+
 
 Unity Animation Videos:
 
 * [JumpingJacks | PifuHD](videos/JumpingJacks-PifuHD.mov)
 * [FigureSkater | ICON](videos/FigureSkater-ICON.mov)
 * [SkateBoarder | ICON](videos/SkateBoarder-ICON.mov)
-
-
-
-
-### Unity Playthrough
-
-I mostly evaluated models generated from PifuHD.
-
-The entire project is checked into PlasticSCM at: reconstruction@souranil_unity894@cloud.
 
 
 ## Considerations
