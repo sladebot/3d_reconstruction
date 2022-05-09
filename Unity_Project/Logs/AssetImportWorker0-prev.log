@@ -1,0 +1,1653 @@
+Unity Editor version:    2021.3.1f1 (3b70a0754835)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.3 (Build 21E230)
+Darwin version:          21.4.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/souranilsen/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58643
+Successfully changed project path to: /Users/souranilsen/My project
+/Users/souranilsen/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 71.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/souranilsen/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Max (high power)
+Metal devices available: 1
+0: Apple M1 Max (high power)
+Using device Apple M1 Max (high power)
+Initializing Metal device caps: Apple M1 Max
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001017 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 68.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.456 seconds
+Domain Reload Profiling:
+	ReloadAssembly (456ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (295ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (71ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (177ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (68ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004166 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.623 seconds
+Domain Reload Profiling:
+	ReloadAssembly (623ms)
+		BeginReloadAssembly (53ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (10ms)
+		EndReloadAssembly (501ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (197ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.1f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3227 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (95.5 KB). Loaded Objects now: 3688.
+Memory consumption went from 220.9 MB to 220.8 MB.
+Total: 2.442750 ms (FindLiveObjects: 0.108875 ms CreateObjectMapping: 0.039584 ms MarkObjects: 2.221000 ms  DeleteObjects: 0.072500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 299301.209942 seconds.
+  path: Assets/Scenes/SkateBoarder.unity
+  artifactKey: Guid(032a496b85a4d4a0faf1afbf6b8d2665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SkateBoarder.unity using Guid(032a496b85a4d4a0faf1afbf6b8d2665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287199beca8a018bbf2861c1de697303') in 0.011332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Scenes/FigureSkater.unity
+  artifactKey: Guid(1454ffe4fe4e5462ba8c1a33ce16548f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FigureSkater.unity using Guid(1454ffe4fe4e5462ba8c1a33ce16548f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47cbb5edbef5d486bd4470235a200d6b') in 0.000439 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001250 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17de5f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.549 seconds
+Domain Reload Profiling:
+	ReloadAssembly (549ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (427ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (171ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.7 KB). Loaded Objects now: 3691.
+Memory consumption went from 220.7 MB to 220.7 MB.
+Total: 1.999083 ms (FindLiveObjects: 0.103000 ms CreateObjectMapping: 0.036792 ms MarkObjects: 1.805875 ms  DeleteObjects: 0.053000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 73856.187553 seconds.
+  path: Assets/Scenes/Compare.unity
+  artifactKey: Guid(c3a7b01bf1d8942b9bd789b35636fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Compare.unity using Guid(c3a7b01bf1d8942b9bd789b35636fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571deb4553ff39cb3efe2ba696185d41') in 0.205849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.213042 seconds.
+  path: Assets/Scenes/frame0_refine.obj
+  artifactKey: Guid(5102ed08cd5d94b4fb38e50440e4755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/frame0_refine.obj using Guid(5102ed08cd5d94b4fb38e50440e4755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33084d95dd92124918ef49852fd5a8ed') in 1.195068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.756180 seconds.
+  path: Assets/Compare
+  artifactKey: Guid(9e9aabb989e554c8da0cd07c035853fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare using Guid(9e9aabb989e554c8da0cd07c035853fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990714fe85564aef665ec10f6233c94b') in 0.000724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.392385 seconds.
+  path: Assets/Compare/ICON_filtered_100_SMPL_Loop.obj
+  artifactKey: Guid(5102ed08cd5d94b4fb38e50440e4755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/ICON_filtered_100_SMPL_Loop.obj using Guid(5102ed08cd5d94b4fb38e50440e4755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae50020bab712058ea2bccd4610cc653') in 0.019094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.697941 seconds.
+  path: Assets/Compare/frame0_recon.obj
+  artifactKey: Guid(52c1bca1077e4420a8ffa7a61e896a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/frame0_recon.obj using Guid(52c1bca1077e4420a8ffa7a61e896a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fac9d639ef2cfc613553a9b5d216a6') in 0.018416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.084285 seconds.
+  path: Assets/Compare/result_frame0_256.obj
+  artifactKey: Guid(a3f684609c7c34d918c4f21d20ed0c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/result_frame0_256.obj using Guid(a3f684609c7c34d918c4f21d20ed0c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5231033fd806ce8002f9674d470cf51') in 0.018600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.142163 seconds.
+  path: Assets/Compare/pifuHD.obj
+  artifactKey: Guid(a3f684609c7c34d918c4f21d20ed0c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/pifuHD.obj using Guid(a3f684609c7c34d918c4f21d20ed0c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14c83679a240b687daf7528c976c4f4') in 0.040267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.831428 seconds.
+  path: Assets/Compare/frame0_refine.obj
+  artifactKey: Guid(6e398955126ab401a81831ca867de14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/frame0_refine.obj using Guid(6e398955126ab401a81831ca867de14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e418ed9f1af6bb7c2effda4ceca049cd') in 0.041679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.894980 seconds.
+  path: Assets/Compare/ICON-PIFU.obj
+  artifactKey: Guid(6e398955126ab401a81831ca867de14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/ICON-PIFU.obj using Guid(6e398955126ab401a81831ca867de14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c51d96ca0b1134f72ab086fa676069') in 0.016167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.195332 seconds.
+  path: Assets/Compare/frame0_refine.obj
+  artifactKey: Guid(77581ad2ba28649a1a3f7151fad64b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/frame0_refine.obj using Guid(77581ad2ba28649a1a3f7151fad64b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c38363c6315c390a6ce7634a411e94') in 0.019219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.919591 seconds.
+  path: Assets/Compare/ICON.obj
+  artifactKey: Guid(77581ad2ba28649a1a3f7151fad64b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/ICON.obj using Guid(77581ad2ba28649a1a3f7151fad64b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bbd20419d51a8059843e5897d1ca61') in 0.017284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6514.471174 seconds.
+  path: Assets/Compare/result_frame0_256.obj
+  artifactKey: Guid(d16b36cd53e2d40588f1f8822652e382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/result_frame0_256.obj using Guid(d16b36cd53e2d40588f1f8822652e382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baeacec054bc692d184d8cade4ba5560') in 0.076925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.931942 seconds.
+  path: Assets/Compare/pifuHD-Filtered.obj
+  artifactKey: Guid(d16b36cd53e2d40588f1f8822652e382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Compare/pifuHD-Filtered.obj using Guid(d16b36cd53e2d40588f1f8822652e382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcaf5c497c50bb5ce20dbe20618d9acf') in 0.030706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29053.388035 seconds.
+  path: Assets/JumpingJack_pifuhd
+  artifactKey: Guid(dc95e89f24c8543cbbdc8c50e809190e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd using Guid(dc95e89f24c8543cbbdc8c50e809190e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46c7739976d86c9b193987c13a8c5d2') in 0.009102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.861625 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame0_256_smpl_refined.obj
+  artifactKey: Guid(bf6ea338c00a047ea9a00c19a2dda198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame0_256_smpl_refined.obj using Guid(bf6ea338c00a047ea9a00c19a2dda198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb51fee048d5b6722fd306e424818b5') in 0.590424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame136_256_smpl_refined.obj
+  artifactKey: Guid(5684afb46f42645bea22e4e198ea9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame136_256_smpl_refined.obj using Guid(5684afb46f42645bea22e4e198ea9044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77f9ba3139c3014181aa17368a323b8') in 0.030250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame148_256_smpl_refined.obj
+  artifactKey: Guid(13ea572bf7f7d43b5b1e96e36ea6fbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame148_256_smpl_refined.obj using Guid(13ea572bf7f7d43b5b1e96e36ea6fbb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e113e3f34d3c0074898a7d70fb3b8b3c') in 0.045994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame114_256_smpl_refined.obj
+  artifactKey: Guid(15b5317b7727e4fcfb6db27c6333e0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame114_256_smpl_refined.obj using Guid(15b5317b7727e4fcfb6db27c6333e0c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65548aa93a271a33476c4c07d39d346a') in 0.039185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame92_256_smpl_refined.obj
+  artifactKey: Guid(05ee9a997b5d6495d95211268043a4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame92_256_smpl_refined.obj using Guid(05ee9a997b5d6495d95211268043a4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30e6700d3a773b41c1af35c85d396c4') in 0.027987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame22_256_smpl_refined.obj
+  artifactKey: Guid(ce2ac9e43509c4432a1cb35e1710ee7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame22_256_smpl_refined.obj using Guid(ce2ac9e43509c4432a1cb35e1710ee7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d6c3e24fa2d405c5b85ea7e64eef66') in 0.018414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame102_256_smpl_refined.obj
+  artifactKey: Guid(7f3b729aa8de64f1d9a07196c2162adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame102_256_smpl_refined.obj using Guid(7f3b729aa8de64f1d9a07196c2162adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034472ec3064cdac0876bc0711018d67') in 0.017007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame78_256_smpl_refined.obj
+  artifactKey: Guid(8b7dc421f38ba4e1086144301a544066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame78_256_smpl_refined.obj using Guid(8b7dc421f38ba4e1086144301a544066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56dde4b1eedd16940ce54c2ab2fa225') in 0.017216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame138_256_smpl_refined.obj
+  artifactKey: Guid(0eddc77d5bc8c42b8a6d016f787d215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame138_256_smpl_refined.obj using Guid(0eddc77d5bc8c42b8a6d016f787d215e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f575697ca81511e4114adc4d6d132c') in 0.014978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame144_256_smpl_refined.obj
+  artifactKey: Guid(754238ac5e91248d986ce39f87268e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame144_256_smpl_refined.obj using Guid(754238ac5e91248d986ce39f87268e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5de072260f231cd97730304de295a04') in 0.016509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame160_256_smpl_refined.obj
+  artifactKey: Guid(f2a0d91142c54486caa4e609a08c3533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame160_256_smpl_refined.obj using Guid(f2a0d91142c54486caa4e609a08c3533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b535c1a2c6c2cd30b1b02b1c9ebc4e') in 0.015100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame168_256_smpl_refined.obj
+  artifactKey: Guid(360e6125c31ac4050b48c5885d1efa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame168_256_smpl_refined.obj using Guid(360e6125c31ac4050b48c5885d1efa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5279e10af5f8c1398dd74e91baad301a') in 0.015045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame26_256_smpl_refined.obj
+  artifactKey: Guid(8eb4c2789ef8b49509c3a4d042de9e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame26_256_smpl_refined.obj using Guid(8eb4c2789ef8b49509c3a4d042de9e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a588af56bbdf9899cbe12004e5fe10') in 0.015197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame82_256_smpl_refined.obj
+  artifactKey: Guid(019f58d329dbc4f4fbd21de9f8ee5569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame82_256_smpl_refined.obj using Guid(019f58d329dbc4f4fbd21de9f8ee5569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3c2486b3f7bf33ec42f2e27670ddf2') in 0.036470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame166_256_smpl_refined.obj
+  artifactKey: Guid(c2658a087edca4d9198c4f8f17340a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame166_256_smpl_refined.obj using Guid(c2658a087edca4d9198c4f8f17340a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0c23314ac7b2522d8e8e3d09ff31be') in 0.014263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame98_256_smpl_refined.obj
+  artifactKey: Guid(71931c07191664fd3abd2a065354c3d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame98_256_smpl_refined.obj using Guid(71931c07191664fd3abd2a065354c3d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e43845650985f20580af1b7ba24695d') in 0.015505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame66_256_smpl_refined.obj
+  artifactKey: Guid(f5e87993b8b6242e3acbc960109e5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame66_256_smpl_refined.obj using Guid(f5e87993b8b6242e3acbc960109e5ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781d0ed362cf05535bbbfb65db45c148') in 0.015261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame142_256_smpl_refined.obj
+  artifactKey: Guid(e0a1f128c6d6a4ee8bdaf9f63abe66eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame142_256_smpl_refined.obj using Guid(e0a1f128c6d6a4ee8bdaf9f63abe66eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56cae950a098f632c11f6b50ad96e56a') in 0.015137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame146_256_smpl_refined.obj
+  artifactKey: Guid(801ac40754f0e424485f1028eb1f20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame146_256_smpl_refined.obj using Guid(801ac40754f0e424485f1028eb1f20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff08683e69604d485fa10851c0f805fe') in 0.015414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame124_256_smpl_refined.obj
+  artifactKey: Guid(744804d471a4a4f31a9b81e28996774f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame124_256_smpl_refined.obj using Guid(744804d471a4a4f31a9b81e28996774f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0c6e3dbc295e5d65a35e4abdbf85ba') in 0.015510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame70_256_smpl_refined.obj
+  artifactKey: Guid(f8a470f1eeb7b4591a033147b9e9c137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame70_256_smpl_refined.obj using Guid(f8a470f1eeb7b4591a033147b9e9c137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c87e6743e3d7802cbba25c016de057') in 0.015273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame74_256_smpl_refined.obj
+  artifactKey: Guid(fb530ef43a63c4c68862cb73137ba70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame74_256_smpl_refined.obj using Guid(fb530ef43a63c4c68862cb73137ba70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d035cef0937e3fc5c9a91c1048b4b0') in 0.013816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame94_256_smpl_refined.obj
+  artifactKey: Guid(bf2c65f62c3354ea692dfc3606883bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame94_256_smpl_refined.obj using Guid(bf2c65f62c3354ea692dfc3606883bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43977e627d202530b2c0ec4e55abe23') in 0.014993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame64_256_smpl_refined.obj
+  artifactKey: Guid(4c56a25d2f1774d039a0c455644e0219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame64_256_smpl_refined.obj using Guid(4c56a25d2f1774d039a0c455644e0219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c331904d34726a94e67fb0cbd17f16a') in 0.014558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame8_256_smpl_refined.obj
+  artifactKey: Guid(bfa19d80728fc48eca16edbd2c1a407a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame8_256_smpl_refined.obj using Guid(bfa19d80728fc48eca16edbd2c1a407a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2616fe6dd086f0203e6edc1071a05437') in 0.013972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame154_256_smpl_refined.obj
+  artifactKey: Guid(52e34dedb95d44fd7b84d11d50648213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame154_256_smpl_refined.obj using Guid(52e34dedb95d44fd7b84d11d50648213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c9240d370213241b2efaa5d3c261dd1') in 0.015428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame164_256_smpl_refined.obj
+  artifactKey: Guid(2c8c2b6bf6ae64d90a3572057bc221a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame164_256_smpl_refined.obj using Guid(2c8c2b6bf6ae64d90a3572057bc221a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf4ef5273828b6b2b63a6e86ba596a1') in 0.024274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame140_256_smpl_refined.obj
+  artifactKey: Guid(a8563685c6e9846b999155ee1bf8870f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame140_256_smpl_refined.obj using Guid(a8563685c6e9846b999155ee1bf8870f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3708644099f3ecf906ac7fe4d50c6c') in 0.023193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame62_256_smpl_refined.obj
+  artifactKey: Guid(82292c2eb3e5f4977a02ea1d80b6e3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame62_256_smpl_refined.obj using Guid(82292c2eb3e5f4977a02ea1d80b6e3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f43ac1c1a3e50f0fd877521300e58b') in 0.024628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame54_256_smpl_refined.obj
+  artifactKey: Guid(f805e485d27554dc78b17520a24a840a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame54_256_smpl_refined.obj using Guid(f805e485d27554dc78b17520a24a840a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caab2e291c7b916086e0bac613ffd87d') in 0.019454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame86_256_smpl_refined.obj
+  artifactKey: Guid(f86b8d7ab55ff4fa09004a9b41fefb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame86_256_smpl_refined.obj using Guid(f86b8d7ab55ff4fa09004a9b41fefb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6fc654810beb96ab1bd984a110e373') in 0.022115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame118_256_smpl_refined.obj
+  artifactKey: Guid(109d4049bdf2b4970b2e8295b76a9848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame118_256_smpl_refined.obj using Guid(109d4049bdf2b4970b2e8295b76a9848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f04710259408a1124389a95a4cbc8b1') in 0.024749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame172_256_smpl_refined.obj
+  artifactKey: Guid(e50589d54e2c0409f92376d5c287bda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame172_256_smpl_refined.obj using Guid(e50589d54e2c0409f92376d5c287bda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfa30446623878760c0adfecf0330ef') in 0.019625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame4_256_smpl_refined.obj
+  artifactKey: Guid(c754355409dc6417eb1a9a594318c8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame4_256_smpl_refined.obj using Guid(c754355409dc6417eb1a9a594318c8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f827088694b94c83c8041cb83d84274') in 0.022143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame14_256_smpl_refined.obj
+  artifactKey: Guid(2423bd04840434a40a584d3ea5153ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame14_256_smpl_refined.obj using Guid(2423bd04840434a40a584d3ea5153ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fb21a2408e62d36d02601f31feebda') in 0.017836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame128_256_smpl_refined.obj
+  artifactKey: Guid(95b4980a7d7024c2ab13906438ca1414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame128_256_smpl_refined.obj using Guid(95b4980a7d7024c2ab13906438ca1414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec8358112deadf089b82901f0a4335ac') in 0.014986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame18_256_smpl_refined.obj
+  artifactKey: Guid(01417fbe6899240d5856997e61177321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame18_256_smpl_refined.obj using Guid(01417fbe6899240d5856997e61177321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119b624df2df355030c2200c9392d8ee') in 0.014622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame96_256_smpl_refined.obj
+  artifactKey: Guid(c59148b559a764139a51eb7bac51b1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame96_256_smpl_refined.obj using Guid(c59148b559a764139a51eb7bac51b1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548c4b99ac53b59c783e4b1a62fb24d8') in 0.018257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame76_256_smpl_refined.obj
+  artifactKey: Guid(adbb51bbd7fa74b88856f34135931f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame76_256_smpl_refined.obj using Guid(adbb51bbd7fa74b88856f34135931f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad269dca9956ef72f01853feb8464668') in 0.015601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame44_256_smpl_refined.obj
+  artifactKey: Guid(5725ea06e754b435ab2809ff85e30ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame44_256_smpl_refined.obj using Guid(5725ea06e754b435ab2809ff85e30ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57c89ec229170bce9ffa961315bebf4') in 0.017392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame90_256_smpl_refined.obj
+  artifactKey: Guid(8d4cb942b65484b0b83948e1a633a103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame90_256_smpl_refined.obj using Guid(8d4cb942b65484b0b83948e1a633a103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9acaa4f4ed8940ef428c846ed2940e6') in 0.015329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame68_256_smpl_refined.obj
+  artifactKey: Guid(fce7694b87ad143aca31f2900f30b1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame68_256_smpl_refined.obj using Guid(fce7694b87ad143aca31f2900f30b1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0daec7b57d0c79fbf70fd744aef7a7f7') in 0.016293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame32_256_smpl_refined.obj
+  artifactKey: Guid(c8c46922a4ae7414ba30b1eeb0d903b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame32_256_smpl_refined.obj using Guid(c8c46922a4ae7414ba30b1eeb0d903b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04539f9ac2ad295a35386682c0a2eed4') in 0.015704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame34_256_smpl_refined.obj
+  artifactKey: Guid(92970c31758f2476bb2af491785b3ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame34_256_smpl_refined.obj using Guid(92970c31758f2476bb2af491785b3ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e89dd5bea0449d3e79361a1e3b9e24aa') in 0.015476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame52_256_smpl_refined.obj
+  artifactKey: Guid(567517a752ac346deb345c32b972a59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame52_256_smpl_refined.obj using Guid(567517a752ac346deb345c32b972a59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e51296a86b8859c9fcf6c3aa4e006e') in 0.015382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame134_256_smpl_refined.obj
+  artifactKey: Guid(4eb01082944ba4be8bc478948861002b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame134_256_smpl_refined.obj using Guid(4eb01082944ba4be8bc478948861002b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac9da83ac23eef67c8e38d143cdbe71c') in 0.017536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame156_256_smpl_refined.obj
+  artifactKey: Guid(0e5d1ee3967b24b49bd6d7f5df4b2e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame156_256_smpl_refined.obj using Guid(0e5d1ee3967b24b49bd6d7f5df4b2e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5b79364fb02f653ae60f5a2ba03ecb') in 0.016441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame104_256_smpl_refined.obj
+  artifactKey: Guid(31b0493fbf2ef474b9c595a94f3fe18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame104_256_smpl_refined.obj using Guid(31b0493fbf2ef474b9c595a94f3fe18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22945e29504b3793c6ee46e5cab8eee5') in 0.018656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame130_256_smpl_refined.obj
+  artifactKey: Guid(83d0e55af67464433a1aef2072eadedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame130_256_smpl_refined.obj using Guid(83d0e55af67464433a1aef2072eadedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1ea53cc130b1900ed785b88ddd1690') in 0.015317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame122_256_smpl_refined.obj
+  artifactKey: Guid(71c8c21ae81fd4314b63cdf40f7100da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame122_256_smpl_refined.obj using Guid(71c8c21ae81fd4314b63cdf40f7100da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd149f9125af6fc35893a5cafd9bcfbc8') in 0.015558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame120_256_smpl_refined.obj
+  artifactKey: Guid(294940d8456584664b7a6e806dda2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame120_256_smpl_refined.obj using Guid(294940d8456584664b7a6e806dda2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc61de7cfb1e6b1e6ad721b164f3a17') in 0.014430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame6_256_smpl_refined.obj
+  artifactKey: Guid(91abb64be6b444a308dc1a9c18da8b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame6_256_smpl_refined.obj using Guid(91abb64be6b444a308dc1a9c18da8b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb759e6ac789b17c23362559c4dbb7e') in 0.015108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame60_256_smpl_refined.obj
+  artifactKey: Guid(56df5dbe0bae848dfba81eead49a8434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame60_256_smpl_refined.obj using Guid(56df5dbe0bae848dfba81eead49a8434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5385de36f6b3ea336a8fcc55e13f506') in 0.015842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame150_256_smpl_refined.obj
+  artifactKey: Guid(b2a78394b91374654aee03e530e05940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame150_256_smpl_refined.obj using Guid(b2a78394b91374654aee03e530e05940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9d8ba17671651a9c4c261fd476d19f') in 0.015174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame16_256_smpl_refined.obj
+  artifactKey: Guid(00c71f63bdad74413a0451cb76c690cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame16_256_smpl_refined.obj using Guid(00c71f63bdad74413a0451cb76c690cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc73c7676e51e15b258c6e59ecc6cfe4') in 0.014836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame28_256_smpl_refined.obj
+  artifactKey: Guid(9bbc4d393ebaa462890b20b2cbf34fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame28_256_smpl_refined.obj using Guid(9bbc4d393ebaa462890b20b2cbf34fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1beb5d430230d66b944ed2b34fce069') in 0.017522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame72_256_smpl_refined.obj
+  artifactKey: Guid(c1c9fc8228ded4857814b81bb9545276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame72_256_smpl_refined.obj using Guid(c1c9fc8228ded4857814b81bb9545276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d1bc99aec473e5132be422300cc743') in 0.014805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame12_256_smpl_refined.obj
+  artifactKey: Guid(1a2fd4f08e4694c38b64490b52d95b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame12_256_smpl_refined.obj using Guid(1a2fd4f08e4694c38b64490b52d95b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b832f18b1b2ab360023b2ad4c10689a0') in 0.015204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame20_256_smpl_refined.obj
+  artifactKey: Guid(5d8f078b2c5b7406f96f030252915873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame20_256_smpl_refined.obj using Guid(5d8f078b2c5b7406f96f030252915873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e460e8952b51c2983e18abb41c464f36') in 0.015134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame38_256_smpl_refined.obj
+  artifactKey: Guid(1675449b2ca80410abcbb3769ac4e758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame38_256_smpl_refined.obj using Guid(1675449b2ca80410abcbb3769ac4e758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e44b747dc9938b43d349417c95afa4e') in 0.013976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame178_256_smpl_refined.obj
+  artifactKey: Guid(e7152bb77f6ce433ab07fb5387b28908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame178_256_smpl_refined.obj using Guid(e7152bb77f6ce433ab07fb5387b28908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae50229c8ab82dae671f76a1e461ba7') in 0.015334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001249 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame158_256_smpl_refined.obj
+  artifactKey: Guid(9a1bd062e7d7e403abdca900e40a209c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame158_256_smpl_refined.obj using Guid(9a1bd062e7d7e403abdca900e40a209c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fb01f586cdb0772f9bcdf9c0568cd1') in 0.027461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame50_256_smpl_refined.obj
+  artifactKey: Guid(c333e90bff152472a9827e719d81fde6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame50_256_smpl_refined.obj using Guid(c333e90bff152472a9827e719d81fde6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6fb23a5d66c1a4aaa56e604b293f37') in 0.034738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame162_256_smpl_refined.obj
+  artifactKey: Guid(24c50178f3bbd425baa23f45564272ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame162_256_smpl_refined.obj using Guid(24c50178f3bbd425baa23f45564272ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd42a71004582542b66aadc7fb1fb6453') in 0.027008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame112_256_smpl_refined.obj
+  artifactKey: Guid(7fe257d223ff6493f84a681593ba168e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame112_256_smpl_refined.obj using Guid(7fe257d223ff6493f84a681593ba168e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc6d7b498f84761aa8d613d7c5715d5') in 0.059145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame126_256_smpl_refined.obj
+  artifactKey: Guid(73d65c20753124a059f4ae4ec5d7f682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame126_256_smpl_refined.obj using Guid(73d65c20753124a059f4ae4ec5d7f682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c3d76bb78bb573ebbc4cb1ac3672f2') in 0.014836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame42_256_smpl_refined.obj
+  artifactKey: Guid(cf4c4980e7d7f4121bbd9c4f0b8542f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame42_256_smpl_refined.obj using Guid(cf4c4980e7d7f4121bbd9c4f0b8542f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d33c28335f1ec9303dd8f9f804320d8') in 0.017371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame176_256_smpl_refined.obj
+  artifactKey: Guid(8dd2ca2bc69594ad8b8a460f29624c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame176_256_smpl_refined.obj using Guid(8dd2ca2bc69594ad8b8a460f29624c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9d688dde6fb335550d47826c59cc4a') in 0.019251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame10_256_smpl_refined.obj
+  artifactKey: Guid(0b51c1ce513344f03b77170b1b5c01d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame10_256_smpl_refined.obj using Guid(0b51c1ce513344f03b77170b1b5c01d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def3124f3767efbaf2ff9db10a5c85e1') in 0.019968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame152_256_smpl_refined.obj
+  artifactKey: Guid(6efe00941d086456e8774b7f93d078c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame152_256_smpl_refined.obj using Guid(6efe00941d086456e8774b7f93d078c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e152636efd1dda9a9af932585d8084a') in 0.016297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame88_256_smpl_refined.obj
+  artifactKey: Guid(4d3609aed60c34785b8462e4755f0580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame88_256_smpl_refined.obj using Guid(4d3609aed60c34785b8462e4755f0580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97c904f3871138b834bbe2139427d62') in 0.015218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame46_256_smpl_refined.obj
+  artifactKey: Guid(8dca7b54457564dba8675973ee2d3314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame46_256_smpl_refined.obj using Guid(8dca7b54457564dba8675973ee2d3314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48684b58cebb1f113bc4983b4aaa353') in 0.014438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame30_256_smpl_refined.obj
+  artifactKey: Guid(a1658dd41605a4640b6d67a7d1916acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame30_256_smpl_refined.obj using Guid(a1658dd41605a4640b6d67a7d1916acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8628539d8d75578b07b944fe9e0350de') in 0.014845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame170_256_smpl_refined.obj
+  artifactKey: Guid(6cefc6e0dbdf24c87b5478677315689d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame170_256_smpl_refined.obj using Guid(6cefc6e0dbdf24c87b5478677315689d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec6b0ff7014d864425021995cda0dcf') in 0.014381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame58_256_smpl_refined.obj
+  artifactKey: Guid(eefcbe4c1ef1d438e967c08af88273f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame58_256_smpl_refined.obj using Guid(eefcbe4c1ef1d438e967c08af88273f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f565f3af48a6d8d6ada10dee0c3b40b2') in 0.015438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame48_256_smpl_refined.obj
+  artifactKey: Guid(fb828eae4836945e6a4d0a174b523513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame48_256_smpl_refined.obj using Guid(fb828eae4836945e6a4d0a174b523513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c71b65448e24fa83595ac35c4d40737') in 0.014762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame108_256_smpl_refined.obj
+  artifactKey: Guid(2a95a445710284876b717491434df3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame108_256_smpl_refined.obj using Guid(2a95a445710284876b717491434df3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076e81712f68580352369c30e12eecb9') in 0.015253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame24_256_smpl_refined.obj
+  artifactKey: Guid(3714a960eaf9b47739bbe7ec51696529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame24_256_smpl_refined.obj using Guid(3714a960eaf9b47739bbe7ec51696529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8b9331a93a1365160f9c206f2b73d9') in 0.014661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame36_256_smpl_refined.obj
+  artifactKey: Guid(7e65589292cae418dbc3ab1931fc710a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame36_256_smpl_refined.obj using Guid(7e65589292cae418dbc3ab1931fc710a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f318283b5fedbaee171f5dabfe4da7') in 0.014919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame132_256_smpl_refined.obj
+  artifactKey: Guid(334726f6191094fe8bbda954ff8ecac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame132_256_smpl_refined.obj using Guid(334726f6191094fe8bbda954ff8ecac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0891ad5f50d07a3214211238a91d91c6') in 0.016109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame40_256_smpl_refined.obj
+  artifactKey: Guid(25cbcc3269c634b5fa96cd3ea69fd403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame40_256_smpl_refined.obj using Guid(25cbcc3269c634b5fa96cd3ea69fd403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744ff6213fa703ad70afb12b84431f93') in 0.016695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame116_256_smpl_refined.obj
+  artifactKey: Guid(7d4b11ab0471242699cb3f672c4a164f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame116_256_smpl_refined.obj using Guid(7d4b11ab0471242699cb3f672c4a164f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31a5c7ece113db763515c31f5e38e69') in 0.015997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame56_256_smpl_refined.obj
+  artifactKey: Guid(a7560882965f642f49280ad177427346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame56_256_smpl_refined.obj using Guid(a7560882965f642f49280ad177427346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820c244d37a95224e176c8d00c013436') in 0.014483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame106_256_smpl_refined.obj
+  artifactKey: Guid(9820b7187582f4a9ca8a6765f09c990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame106_256_smpl_refined.obj using Guid(9820b7187582f4a9ca8a6765f09c990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f81fb5d332c28553d83384e22aa76d') in 0.015380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame100_256_smpl_refined.obj
+  artifactKey: Guid(ac04c57f2fbcc4b2fa99c5375471a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame100_256_smpl_refined.obj using Guid(ac04c57f2fbcc4b2fa99c5375471a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e3e18bd7146f455db61123f27a2d40') in 0.014253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame84_256_smpl_refined.obj
+  artifactKey: Guid(69da41cc8aea4415da361c9391b4cecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame84_256_smpl_refined.obj using Guid(69da41cc8aea4415da361c9391b4cecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4cffd8f09324a21f0a0ca6c1358e6') in 0.014954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame80_256_smpl_refined.obj
+  artifactKey: Guid(e9c10228b0a034cda90ea7ec0bb687e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame80_256_smpl_refined.obj using Guid(e9c10228b0a034cda90ea7ec0bb687e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfee3784bdf9b27621d6c86dedde6f0') in 0.014632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame110_256_smpl_refined.obj
+  artifactKey: Guid(39a112b3682504c14a66575680788076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame110_256_smpl_refined.obj using Guid(39a112b3682504c14a66575680788076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f31499ff6b2525e0e9fce24923a1773') in 0.016317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame174_256_smpl_refined.obj
+  artifactKey: Guid(39f8f384c787d4ca9a1e83a5d3401694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame174_256_smpl_refined.obj using Guid(39f8f384c787d4ca9a1e83a5d3401694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0352599afb8b9eb1b9d741b36a3907d1') in 0.015287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.572874 seconds.
+  path: Assets/Scenes/JumpingJack_PIFUHD.unity
+  artifactKey: Guid(5af770e9fdfa94ac2bec973a08f380fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/JumpingJack_PIFUHD.unity using Guid(5af770e9fdfa94ac2bec973a08f380fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b846572e7ec965b69e3f1b71e14ade') in 0.000891 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000852 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (472ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (222ms)
+		EndReloadAssembly (515ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (181ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.8 KB). Loaded Objects now: 3736.
+Memory consumption went from 230.9 MB to 230.8 MB.
+Total: 3.485167 ms (FindLiveObjects: 0.119375 ms CreateObjectMapping: 0.039292 ms MarkObjects: 3.262750 ms  DeleteObjects: 0.063041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001308 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.594 seconds
+Domain Reload Profiling:
+	ReloadAssembly (595ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (434ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (157ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (178ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (39ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.8 KB). Loaded Objects now: 3739.
+Memory consumption went from 231.1 MB to 231.0 MB.
+Total: 2.124667 ms (FindLiveObjects: 0.102708 ms CreateObjectMapping: 0.036834 ms MarkObjects: 1.921333 ms  DeleteObjects: 0.063167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 64534.672365 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame0_256_smpl_refined.obj.dae
+  artifactKey: Guid(5a6c9ba36a9ad41ed838bfbcc4a2ccbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame0_256_smpl_refined.obj.dae using Guid(5a6c9ba36a9ad41ed838bfbcc4a2ccbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875386b673da7bf9e192e42acad7dd8a') in 0.706702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame34_256_smpl_refined.obj.dae
+  artifactKey: Guid(919e9f0f0b8a14a8f8c8fad18c9cf4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame34_256_smpl_refined.obj.dae using Guid(919e9f0f0b8a14a8f8c8fad18c9cf4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b50acb7481c5ce7d76fd5e38d55fc95') in 0.016486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame132_256_smpl_refined.obj.dae
+  artifactKey: Guid(aa00cfd7f86f2412ca27e5a1dd040888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame132_256_smpl_refined.obj.dae using Guid(aa00cfd7f86f2412ca27e5a1dd040888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59065dfdb68fbca9f9594099583a989c') in 0.017388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame124_256_smpl_refined.obj.dae
+  artifactKey: Guid(5ec3b2ab943e94e748f9c9c19fbad74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame124_256_smpl_refined.obj.dae using Guid(5ec3b2ab943e94e748f9c9c19fbad74a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55742a33e9315afdd9ca568c3b4f916c') in 0.026974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame40_256_smpl_refined.obj.dae
+  artifactKey: Guid(5eed1c2c00bba4c1db4d2c2c39e3ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame40_256_smpl_refined.obj.dae using Guid(5eed1c2c00bba4c1db4d2c2c39e3ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124b962aba3e53bddfeb305af8c7ce83') in 0.010791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame178_256_smpl_refined.obj.dae
+  artifactKey: Guid(cf323df80896d44c185095f7c90db1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame178_256_smpl_refined.obj.dae using Guid(cf323df80896d44c185095f7c90db1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa2fcc7689058e7683b27fd5175a9d5') in 0.010701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame72_256_smpl_refined.obj.dae
+  artifactKey: Guid(6f6a6ebefb87c45f1816dd378c819824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame72_256_smpl_refined.obj.dae using Guid(6f6a6ebefb87c45f1816dd378c819824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca983945c7c1aa21019a1b7b7e0bf79') in 0.015604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame14_256_smpl_refined.obj.dae
+  artifactKey: Guid(5f375a108ddec49448932df2341f66f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame14_256_smpl_refined.obj.dae using Guid(5f375a108ddec49448932df2341f66f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb87b7a29d7d66b5b6aaeeb4102274f') in 0.011488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame74_256_smpl_refined.obj.dae
+  artifactKey: Guid(16487784b1bf84bec83fa7579c1097ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame74_256_smpl_refined.obj.dae using Guid(16487784b1bf84bec83fa7579c1097ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16498fad122422ed4fc430da62e3a95e') in 0.018442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame68_256_smpl_refined.obj.dae
+  artifactKey: Guid(c1ba93d14730445b09d2f00532c0ea79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame68_256_smpl_refined.obj.dae using Guid(c1ba93d14730445b09d2f00532c0ea79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1cb0165485d4d95957d8d0ee979d9c1') in 0.017127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame166_256_smpl_refined.obj.dae
+  artifactKey: Guid(7ef1bda6ac4934651af04431356d9f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame166_256_smpl_refined.obj.dae using Guid(7ef1bda6ac4934651af04431356d9f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15afd36f394f815b7ec6fb3f0a271f2e') in 0.013130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame58_256_smpl_refined.obj.dae
+  artifactKey: Guid(7bf6232edec2940d49d509b5defcede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame58_256_smpl_refined.obj.dae using Guid(7bf6232edec2940d49d509b5defcede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a7bb26f1df1e8ae3e3467398171fd5') in 0.012132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame28_256_smpl_refined.obj.dae
+  artifactKey: Guid(e0e0a4a8395544ae4898b535555a9177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame28_256_smpl_refined.obj.dae using Guid(e0e0a4a8395544ae4898b535555a9177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e5fd71d2203ea90fde8be15f7a0a6e') in 0.011969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame140_256_smpl_refined.obj.dae
+  artifactKey: Guid(1329a018f3bef4c2e83f974f23cb4bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame140_256_smpl_refined.obj.dae using Guid(1329a018f3bef4c2e83f974f23cb4bf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9d3296deb9f07263c199481579dc3d') in 0.011384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame122_256_smpl_refined.obj.dae
+  artifactKey: Guid(bda9c5ea77ba744699f811bbd9b69466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame122_256_smpl_refined.obj.dae using Guid(bda9c5ea77ba744699f811bbd9b69466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bbfe1aee1bf7dd048603b78db24509') in 0.010164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame104_256_smpl_refined.obj.dae
+  artifactKey: Guid(de2b5975211be4af2870f33c0bf6e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame104_256_smpl_refined.obj.dae using Guid(de2b5975211be4af2870f33c0bf6e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b480cf53102201206ea4104be56161b') in 0.012299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001111 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame52_256_smpl_refined.obj.dae
+  artifactKey: Guid(d3275b504b9904e5c91a7689de01e5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame52_256_smpl_refined.obj.dae using Guid(d3275b504b9904e5c91a7689de01e5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248a6866a6c20b296ebaf3a8854cc242') in 0.011895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame90_256_smpl_refined.obj.dae
+  artifactKey: Guid(d3b8950b2011842b3a089a67d3dd713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame90_256_smpl_refined.obj.dae using Guid(d3b8950b2011842b3a089a67d3dd713e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a6002b1e8230e4470741f939814f39') in 0.010336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame24_256_smpl_refined.obj.dae
+  artifactKey: Guid(ce0fb1c9751374f278195868b1b83153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame24_256_smpl_refined.obj.dae using Guid(ce0fb1c9751374f278195868b1b83153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368181bce035a18347a065e719e9d890') in 0.011849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame46_256_smpl_refined.obj.dae
+  artifactKey: Guid(52af5274e7e784e1384a18500a76022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame46_256_smpl_refined.obj.dae using Guid(52af5274e7e784e1384a18500a76022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0487ef494b810bb3e5cf8c4ce82bc770') in 0.010369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame126_256_smpl_refined.obj.dae
+  artifactKey: Guid(52656b956d1a2468887658aae7feafbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame126_256_smpl_refined.obj.dae using Guid(52656b956d1a2468887658aae7feafbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0487e8c6f55228b46986ff993f1e5ca0') in 0.010969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame38_256_smpl_refined.obj.dae
+  artifactKey: Guid(a4c68b50893854d1b88ddec3606523a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame38_256_smpl_refined.obj.dae using Guid(a4c68b50893854d1b88ddec3606523a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f5e215b5b6c8eaacdd31aad7f16e395') in 0.010207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame32_256_smpl_refined.obj.dae
+  artifactKey: Guid(a3fbbe9304afc4d199f9da6d28c5f177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame32_256_smpl_refined.obj.dae using Guid(a3fbbe9304afc4d199f9da6d28c5f177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943891bf672e09bc080dc3565d225a03') in 0.010759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame22_256_smpl_refined.obj.dae
+  artifactKey: Guid(c9cf7ec428a24415a8ef159ebb88decf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame22_256_smpl_refined.obj.dae using Guid(c9cf7ec428a24415a8ef159ebb88decf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c373f003877cf8c61ce442e36bc14f') in 0.010991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame118_256_smpl_refined.obj.dae
+  artifactKey: Guid(07f7bf54c819b4ed1b49350c4ca09338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame118_256_smpl_refined.obj.dae using Guid(07f7bf54c819b4ed1b49350c4ca09338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77cca06db1b37412b9707d78767fdea') in 0.010838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame92_256_smpl_refined.obj.dae
+  artifactKey: Guid(b379d4edf18a247f1bc09d91c96c7184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame92_256_smpl_refined.obj.dae using Guid(b379d4edf18a247f1bc09d91c96c7184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d3e799f91ea23563feeb3e72bd84e2') in 0.010312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame78_256_smpl_refined.obj.dae
+  artifactKey: Guid(10463ab9ca18a48f78a4130475fac94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame78_256_smpl_refined.obj.dae using Guid(10463ab9ca18a48f78a4130475fac94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ffdd3c8800a98909fbfe38cf1132de') in 0.010008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame160_256_smpl_refined.obj.dae
+  artifactKey: Guid(eeb02fcc9db8446df86bdb279445f9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame160_256_smpl_refined.obj.dae using Guid(eeb02fcc9db8446df86bdb279445f9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70749245d3ba8ed1b5f86eb7b08c89c4') in 0.011143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame70_256_smpl_refined.obj.dae
+  artifactKey: Guid(74defc9cdf9664f22914a8fb2a8bb4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame70_256_smpl_refined.obj.dae using Guid(74defc9cdf9664f22914a8fb2a8bb4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e32f1d60c4236b5ad2d52542cbf54f9') in 0.009758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame108_256_smpl_refined.obj.dae
+  artifactKey: Guid(d419faf70e72045dab19f9363017809c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame108_256_smpl_refined.obj.dae using Guid(d419faf70e72045dab19f9363017809c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c693562b4d459624012f88f4dddb2a') in 0.009836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame86_256_smpl_refined.obj.dae
+  artifactKey: Guid(b63cbc691cde84c8f9e75fa0025a7515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame86_256_smpl_refined.obj.dae using Guid(b63cbc691cde84c8f9e75fa0025a7515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a237a8dcfa970fdcd9bfe790caddb197') in 0.008847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame56_256_smpl_refined.obj.dae
+  artifactKey: Guid(cbde4255ba75940ca89d87e3dace2610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame56_256_smpl_refined.obj.dae using Guid(cbde4255ba75940ca89d87e3dace2610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555d7907ed19fbcbe9e9b47e058af1c0') in 0.010495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame80_256_smpl_refined.obj.dae
+  artifactKey: Guid(9d57bbc35c5594a96bb2454eb0d8b1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame80_256_smpl_refined.obj.dae using Guid(9d57bbc35c5594a96bb2454eb0d8b1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bbe20a6acaf394cf5349c1fa7cfbd8') in 0.011014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame128_256_smpl_refined.obj.dae
+  artifactKey: Guid(528848b69294c4483b0a70146882b19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame128_256_smpl_refined.obj.dae using Guid(528848b69294c4483b0a70146882b19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfca2134fc7cde920fb8b72cb4218d2') in 0.011025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame134_256_smpl_refined.obj.dae
+  artifactKey: Guid(d3e9924146889461eb2402960d7aa707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame134_256_smpl_refined.obj.dae using Guid(d3e9924146889461eb2402960d7aa707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1815e96012cb35685c6ebe1c9fa11b0') in 0.011528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame96_256_smpl_refined.obj.dae
+  artifactKey: Guid(a033812a3c01f42ae8c5c05ce78032ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame96_256_smpl_refined.obj.dae using Guid(a033812a3c01f42ae8c5c05ce78032ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a788f94370761bcc0463007d2631aadf') in 0.011953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame18_256_smpl_refined.obj.dae
+  artifactKey: Guid(03515c67a05a245edb39afa896375a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame18_256_smpl_refined.obj.dae using Guid(03515c67a05a245edb39afa896375a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba21d2f5774274036985a51e03593bfb') in 0.011201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame76_256_smpl_refined.obj.dae
+  artifactKey: Guid(5235351c3912741e4940df51b06aebbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame76_256_smpl_refined.obj.dae using Guid(5235351c3912741e4940df51b06aebbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b6121d0185e645592b960c4dd089db0') in 0.011603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame158_256_smpl_refined.obj.dae
+  artifactKey: Guid(dd0fd2a43032f4868be88ebe3a33e867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame158_256_smpl_refined.obj.dae using Guid(dd0fd2a43032f4868be88ebe3a33e867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f293c3b7bf4609c5b5147037382c06') in 0.011205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame142_256_smpl_refined.obj.dae
+  artifactKey: Guid(b9eb93cdb33af47dbb3ad27a3d618fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame142_256_smpl_refined.obj.dae using Guid(b9eb93cdb33af47dbb3ad27a3d618fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17ba93c7ef50d521d75c4f2bbee5716') in 0.009972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame150_256_smpl_refined.obj.dae
+  artifactKey: Guid(87fae8d4b3bd64a1db3b373653457515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame150_256_smpl_refined.obj.dae using Guid(87fae8d4b3bd64a1db3b373653457515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091c32ccdcc1151627aa98522fee1ccd') in 0.010735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame112_256_smpl_refined.obj.dae
+  artifactKey: Guid(74a585bbae0b94d97a860bc367e522d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame112_256_smpl_refined.obj.dae using Guid(74a585bbae0b94d97a860bc367e522d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdefae2fa2c5977907f162bd61794979') in 0.028854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame146_256_smpl_refined.obj.dae
+  artifactKey: Guid(1afc5f4f0c4a14d41b1eb1d1c95df3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame146_256_smpl_refined.obj.dae using Guid(1afc5f4f0c4a14d41b1eb1d1c95df3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d41094d2b9f63449e7507d150fde662') in 0.045035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame164_256_smpl_refined.obj.dae
+  artifactKey: Guid(027f44fa0e23144b2a1025daef4f5257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame164_256_smpl_refined.obj.dae using Guid(027f44fa0e23144b2a1025daef4f5257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccca0143c2461a4539d75f477eeab11d') in 0.026217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/JumpingJack_pifuhd/result_frame136_256_smpl_refined.obj.dae
+  artifactKey: Guid(b1a91482e33d74636aba05635695cefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JumpingJack_pifuhd/result_frame136_256_smpl_refined.obj.dae using Guid(b1a91482e33d74636aba05635695cefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b51f25adc7da875bb3204966c13d939') in 0.045406 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000999 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.875 seconds
+Domain Reload Profiling:
+	ReloadAssembly (876ms)
+		BeginReloadAssembly (309ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (506ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (174ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (39ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.7 KB). Loaded Objects now: 3743.
+Memory consumption went from 235.7 MB to 235.6 MB.
+Total: 2.052084 ms (FindLiveObjects: 0.103458 ms CreateObjectMapping: 0.038375 ms MarkObjects: 1.855625 ms  DeleteObjects: 0.053917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000906 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.553 seconds
+Domain Reload Profiling:
+	ReloadAssembly (554ms)
+		BeginReloadAssembly (75ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (424ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (157ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (165ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.6 KB). Loaded Objects now: 3746.
+Memory consumption went from 235.9 MB to 235.8 MB.
+Total: 2.141042 ms (FindLiveObjects: 0.113084 ms CreateObjectMapping: 0.044291 ms MarkObjects: 1.926334 ms  DeleteObjects: 0.056708 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000964 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.574 seconds
+Domain Reload Profiling:
+	ReloadAssembly (587ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (423ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (174ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.8 KB). Loaded Objects now: 3749.
+Memory consumption went from 236.0 MB to 236.0 MB.
+Total: 2.204833 ms (FindLiveObjects: 0.116166 ms CreateObjectMapping: 0.039542 ms MarkObjects: 1.985292 ms  DeleteObjects: 0.062792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001085 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Domain Reload Profiling:
+	ReloadAssembly (576ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (441ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (164ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (162ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.8 KB). Loaded Objects now: 3752.
+Memory consumption went from 236.2 MB to 236.1 MB.
+Total: 2.099666 ms (FindLiveObjects: 0.112625 ms CreateObjectMapping: 0.039500 ms MarkObjects: 1.887291 ms  DeleteObjects: 0.059500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001144 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.522 seconds
+Domain Reload Profiling:
+	ReloadAssembly (523ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (25ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (168ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (38ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (71.9 KB). Loaded Objects now: 3755.
+Memory consumption went from 236.4 MB to 236.3 MB.
+Total: 1.916167 ms (FindLiveObjects: 0.096125 ms CreateObjectMapping: 0.037084 ms MarkObjects: 1.734000 ms  DeleteObjects: 0.048417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000910 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (521ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (399ms)
+			LoadAssemblies (29ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (154ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (161ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (107ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (72.5 KB). Loaded Objects now: 3758.
+Memory consumption went from 236.4 MB to 236.4 MB.
+Total: 1.948708 ms (FindLiveObjects: 0.103833 ms CreateObjectMapping: 0.034792 ms MarkObjects: 1.760416 ms  DeleteObjects: 0.049125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000945 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16badb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Users/souranilsen/My project/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.516 seconds
+Domain Reload Profiling:
+	ReloadAssembly (516ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (395ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (161ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (72.8 KB). Loaded Objects now: 3761.
+Memory consumption went from 236.6 MB to 236.5 MB.
+Total: 2.037583 ms (FindLiveObjects: 0.101958 ms CreateObjectMapping: 0.038000 ms MarkObjects: 1.835125 ms  DeleteObjects: 0.061791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
