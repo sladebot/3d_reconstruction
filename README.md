@@ -79,36 +79,24 @@ Some of the results i.e. final obj and dae files are provided in the
 [results_mini/](results_mini) directory.
 
 ```shell
+.
 └── pifuHD
-    ├── FigureSkater
-    │  ├── dae
-    │  ├── result_frame2_256.obj
-    │  ├── result_frame2_256.png
-    │  ├── result_frame2_256_smpl.obj
-    │  └── result_frame2_256_smpl_refined.obj
-    ├── JumpingJacks
-    │  ├── dae
-    │  │   ├── result_frame0_256_smpl_refined.obj.dae
-    │  │  ├── result_frame2_256_smpl_refined.obj.dae
-    │  │  └── result_frame4_256_smpl_refined.obj.dae
-    │  ├── result_frame4_256.png
-    │  ├── result_frame4_256_smpl.obj
-    │  └── result_frame4_256_smpl_refined.obj
-    └── SkateBoarder
-        ├── dae
-        ├── result_frame2_256.obj
-        ├── result_frame2_256.png
-        ├── result_frame2_256_smpl.obj
-        └── result_frame2_256_smpl_refined.obj
-
+    └── FigureSkater
+        ├── result_frame0_256.obj
+        ├── result_frame0_256.png
+        ├── result_frame0_256_smpl.obj
+        └── result_frame0_256_smpl_refined.obj
 ```
+
+For full results, download from here - [Google Drive Link](https://drive.google.com/drive/folders/1ieYxBUKYty26Vjr2NqEf9wnbeC6FcWHU?usp=sharing)
 
 ### Unity Playthrough
 
-I mostly evaluated models generated from PifuHD. I also created a custom shader
-for using the vertex colors that Pifu for reading the RGB values encoded
-in the vertices and update the material. 
+[github.com/sladebot/3d_reconstruction_unity](https://github.com/sladebot/3d_reconstruction_unity)
 
+I mostly evaluated models generated from PifuHD. Created a custom shader
+for using the vertex colors that Pifu for reading the RGB values encoded
+in the vertices and update the material.
 
 For animating each video I imported all the 3D objects from the frames at the given
 frame rate, and enable them one at a time using a script in Unity. So what it
@@ -129,6 +117,13 @@ Unity Animation Videos:
 * [JumpingJacks | PifuHD](videos/JumpingJacks-PifuHD.mov)
 * [FigureSkater | ICON](videos/FigureSkater-ICON.mov)
 * [SkateBoarder | ICON](videos/SkateBoarder-ICON.mov)
+
+Scenes:
+* Comparison: Comparing models generated from various models like PIFU, PIFUHD, ICON etc.
+* FigureSkater-ICON
+* JumpingJacks-PIFUHD
+* JumpingJack-ICON
+* SkateBoarder-ICON
 
 
 ## Considerations

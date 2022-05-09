@@ -1,4 +1,0 @@
-repository "reconstruction@souranil_unity894@cloud"
-  path "/"
-    br "/main"
-    co "/main"
