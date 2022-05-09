@@ -1,4 +1,4 @@
-Pillow==9.0.0
+Pillow<=7.0.0
 numpy==1.18.1
 opencv-python~=4.5.5.64
 trimesh==3.9.35
