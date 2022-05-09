@@ -1,5 +1,13 @@
 ## Monocular Video to 3D reconstruction
 
+For getting a 3D point in camera coordinate system, say X from a 2D point x we 
+need the projection matrix, and with the camera instrinsics & extrinsics 
+we compute (X, Y, Z, 1) in homonogeneous coordinates from a 2D point (x, y, 1).
+
+Now there are machine learning techniques, and networks that 
+allows direct estimation of the corresponding 3D object. We will evaluate multiple
+methodologies & implement one of them and compare.
+
 
 ### Setup project
 
@@ -63,6 +71,16 @@ If `--meshclean` is provided it also does the following:
 Here's an example:
 
 ![Refine](images/refine.png)
+
+### Results:
+
+Unity Animation Videos:
+
+* [JumpingJacks | PifuHD](videos/JumpingJacks-PifuHD.mov)
+* [FigureSkater | ICON](videos/FigureSkater-ICON.mov)
+* [SkateBoarder | ICON](videos/SkateBoarder-ICON.mov)
+
+
 
 
 ### Unity Playthrough
