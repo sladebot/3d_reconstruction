@@ -39,8 +39,7 @@ Options:
   -r, --resolution INTEGER        Resolution  [default: 256]
   -f, --fps INTEGER               Sampling FPS from video (This is not the
                                   input video fps)  [default: 24]
-  -g, --gpu_id INTEGER            Sampling FPS from video (This is not the
-                                  input video fps)  [default: 0]
+  -g, --gpu_id INTEGER            GPU id  [default: 0]
   -c, --meshclean / --no-meshclean
                                   [default: no-meshclean]
   -p, --process / --no-process    [default: no-process]
