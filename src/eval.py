@@ -18,7 +18,8 @@ def generate(
         results_path,
         load_size,
         gpu_id,
-        use_rect=False):
+        use_rect=False,
+        multi_person=True):
     
 
     cuda = torch.device('cuda:%d' % gpu_id if torch.cuda.is_available() else 'cpu')
@@ -64,13 +65,22 @@ def generate(
                 break
 
             # TODO: Try multi-object
-            test_data = test_dataset[i]
 
-            save_path = '%s/%s/recon/result_%s_%d.obj' % (opt.results_path, opt.name, test_data['name'], opt.resolution)
+            if multi_person:
+                for j in range(test_dataset.get_n_person(i)):
+                    test_dataset.person_id = j
+                    test_data = test_dataset[i]
+                    save_path = '%s/%s/recon/result_%s_%d.obj' % (opt.results_path, opt.name, test_data['name'], j)
+                    gen_mesh(opt.resolution, netMR, cuda, test_data, save_path, components=opt.use_compose)
+            else:
 
-            print(f"Saving to {save_path}")
-            print(f"Model Mode:{netG.training}")
-            gen_mesh(resolution, netMR, cuda, test_data, save_path, components=opt.use_compose)
+                test_data = test_dataset[i]
+
+                save_path = '%s/%s/recon/result_%s_%d.obj' % (opt.results_path, opt.name, test_data['name'], opt.resolution)
+
+                print(f"Saving to {save_path}")
+                print(f"Model Mode:{netG.training}")
+                gen_mesh(resolution, netMR, cuda, test_data, save_path, components=opt.use_compose)
     
     return ('%s/%s/recon' % (results_path, opt.name), True)
 

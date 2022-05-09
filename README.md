@@ -73,6 +73,12 @@ Here's an example:
 ![Refine](images/refine.png)
 
 
+For multi-person I tested with 1 frame without any mesh-cleanup  and here are the results:
+
+![Multi-Person](images/multi-person.png)
+
+The models are available in the `results_mini/` directory.
+
 #### Results:
 
 Some of the results i.e. final obj and dae files are provided in the 
@@ -88,7 +94,7 @@ Some of the results i.e. final obj and dae files are provided in the
         └── result_frame0_256_smpl_refined.obj
 ```
 
-For full results, download from here - [Google Drive Link](https://drive.google.com/drive/folders/1ieYxBUKYty26Vjr2NqEf9wnbeC6FcWHU?usp=sharing)
+For full results, download from here - [Google Drive Link](https://drive.google.com/file/d/1eO4oK8gjZAwKhFHdgoeEe8zK3VDcq-o4/view?usp=sharing)
 
 ### Unity Playthrough
 
@@ -183,18 +189,6 @@ Additionally PHORUS provides all of the above requirements, so I'd also keep an 
 e.g. how would you validate that your outputs are reasonable?
 
 
-
-
-
-
-
-
-
-
-TODO:
-* Test with new video
-* Test with 2 people
-* Update Vertex Normals ?
 
 
 #### Appendix
