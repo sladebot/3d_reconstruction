@@ -64,9 +64,8 @@ def generate(
             if i >= len(test_dataset):
                 break
 
-            # TODO: Try multi-object
-
             if multi_person:
+                print(f"People =- {test_dataset.get_n_person(i)}")
                 for j in range(test_dataset.get_n_person(i)):
                     test_dataset.person_id = j
                     test_data = test_dataset[i]
