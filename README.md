@@ -188,7 +188,12 @@ Additionally PHORUS provides all of the above requirements, so I'd also keep an 
 > A brief statement on how you would write a test suite for your video converter.
 e.g. how would you validate that your outputs are reasonable?
 
-
+Given there are multiple steps to this process, it would be great to keep track of some performance metrics of the model
+like chamfer distance, normal, point-to-surface distance to measure the performace of the trained model. We can also keep
+checks like how the meshes connected components are to check how well we can refine the meshes post reconstruction. For
+validating along with some visual inspection, we can keep certain mesh evaluation metrics to check if the generated
+objects are completely out misconstrued. We can also use SMPL models to check if they're withing a certain threshold of
+deformation. Using SMPL-X priors worked great for ICON model reconstruction, so it might work out great as a testing strategy as well.
 
 
 #### Appendix
