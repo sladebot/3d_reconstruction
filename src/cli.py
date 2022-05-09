@@ -45,7 +45,7 @@ context_settings = {
     "-g",
     "--gpu_id",
     default=0,
-    help="Sampling FPS from video (This is not the input video fps)",
+    help="GPU id",
 )
 @click.option(
     "-c",
@@ -72,9 +72,6 @@ def cli(input_video, output_dir, resolution, fps, gpu_id, meshclean, generate_un
     
     if ok and meshclean:
         meshcleaning(results_dir)
-    
-    # if generate_unity_data:
-        # Convert to dae for Unity consumption
 
 
 if __name__ == "__main__":
