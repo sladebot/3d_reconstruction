@@ -131,19 +131,17 @@ Scenes:
 [PiFU](https://arxiv.org/pdf/2004.00452.pdf) was a good start, and I evaluated a few other approaches that were out
 there - 
 
-ICON
-PHORHUM
-PAMIR
-ARCH++
-PifuHD
+1. ICON
+2. PHORHUM
+3. PAMIR
+4. ARCH++
+5. PifuHD
 
-Some of the parameters that I evaluated were:
-
-Inputs: masks needed, priors required(e.g. SMPL)
-Outputs: surface normals, vertex color along with sdf
-Availability: Are model checkpoints made available, community, Github/website.
-
-
+Some parameters that I evaluated were:
+---
+- Inputs: masks needed, priors required(e.g. SMPL)
+- Outputs: surface normals, vertex color along with sdf
+- Availability: Are model checkpoints made available, community, Github/website.
 
 
 > The approach you chose, why you chose it, and how it works in high-level terms
