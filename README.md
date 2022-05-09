@@ -42,7 +42,6 @@ Options:
   -g, --gpu_id INTEGER            GPU id  [default: 0]
   -c, --meshclean / --no-meshclean
                                   [default: no-meshclean]
-  -p, --process / --no-process    [default: no-process]
   -h, --help                      Show this message and exit.  [default:
                                   False]
 ```
