@@ -25,6 +25,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        convert=src.main:cli
+        metacast=src.cli:cli
     '''
 )
