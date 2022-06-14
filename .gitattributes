@@ -1,4 +1,0 @@
-videos/SkateBoarder-ICON.mov filter=lfs diff=lfs merge=lfs -text
-videos/FigureSkater-ICON.mov filter=lfs diff=lfs merge=lfs -text
-videos/JumpingJacks-PifuHD.mov filter=lfs diff=lfs merge=lfs -text
-results_mini/pifuHD-Multi-Person/result_pic0001_256.obj filter=lfs diff=lfs merge=lfs -text
