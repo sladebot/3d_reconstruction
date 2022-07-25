@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+**/__pycache__/
+
+Unity_Project/Library/
+Unity_Project/ProjectSettings/
+Unity_Project/UserSettings/
+Unity_Project/Temp/
+Unity_Project/Assets/Data
+results/
+models/
+checkpoints/
+input_data/
